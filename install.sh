@@ -13,23 +13,12 @@ WHITE='\e[37m'
 NC='\e[0m'
 purpal='\033[35m'
 
-echo -e "${ORANGE} "
-echo ""
-echo "   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄           ███      ▄██████▄   ▄██████▄   ▄█       ";
-echo "  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███      ▀█████████▄ ███    ███ ███    ███ ███       ";
-echo "  ███    ███     ███    ███ ███    █▀    ███▐██▀   ███▌ ███   ███   ███    █▀          ▀███▀▀██ ███    ███ ███    ███ ███       ";
-echo " ▄███▄▄▄▄███▄▄   ███    ███ ███         ▄█████▀    ███▌ ███   ███  ▄███                 ███   ▀ ███    ███ ███    ███ ███       ";
-echo "▀▀███▀▀▀▀███▀  ▀███████████ ███        ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄           ███     ███    ███ ███    ███ ███       ";
-echo "  ███    ███     ███    ███ ███    █▄    ███▐██▄   ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███       ";
-echo "  ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███▌    ▄ ";
-echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
-echo "                                         ▀                                                                            ▀         ";                         
 
-echo -e "${BLUE}                                    https://github.com/Z4nzu/hackingtool ${NC}"
+echo -e "${BLUE}                                    CREATE BY PAK STEVEN ${NC}"
 
-echo -e "${RED}                                   [!] This Tool Must Run As ROOT [!]${NC}"
+echo -e "${RED}                                   [!] GUNAKAN DENGAN BIJAK [!]${NC}"
 echo ""
-echo -e ${CYAN}              "Select Best Option : "
+echo -e ${CYAN}              "Pilih Angka 1 : "
 echo ""
 echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
 echo -e "${WHITE}              [0] Exit "
@@ -81,7 +70,7 @@ if [ $choice == 1 ]; then
         echo "";
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
         echo 		"		[+]						      		[+]"
-        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔ 	[+]"
+        echo -e $ORANGE  "		[+]     ✔✔✔ Sekarang, run hackingtool diterminalmu ✔✔✔ 	[+]"
         echo 		"		[+]						      		[+]"
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
     else
@@ -90,8 +79,8 @@ if [ $choice == 1 ]; then
     fi
 elif [ $choice -eq 0 ];
 then
-    echo -e $RED "[✘] THank Y0u !! [✘] "
+    echo -e $RED "[✘] Wew makasih !! [✘] "
     exit
 else 
-    echo -e $RED "[!] Select Valid Option [!]"
+    echo -e $RED "[!] Masukan Yang Benar Bro.. [!]"
 fi
