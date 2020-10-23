@@ -36,9 +36,9 @@ logo = """\033[33m
   ███    ███     ███    ███ ███    ███   ███ ▀███▄ ███  ███   ███   ███    ███          ███     ███    ███ ███    ███ ███▌    ▄ 
   ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ 
                                          ▀                                                                            ▀                             
-                                    \033[34m[✔] https://github.com/Z4nzu/hackingtool   [✔]
-                                    \033[34m[✔]            Version 1.1.0               [✔]
-                                    \033[91m[X] Please Don't Use For illegal Activity  [X]
+                                    \033[34m[✔] Telegram: @TermuxUserHack              [✔]
+                                    \033[34m[✔] Whatsapp: 0812522xxxxx                 [✔]
+                                    \033[91m[✔] Jangan Gunakan Untuk Kegiatan Ilegal   [✔]
 \033[97m """
 
 all_tools = [
@@ -64,7 +64,7 @@ all_tools = [
 
 
 class AllTools(HackingToolsCollection):
-    TITLE = "All tools"
+    TITLE = "Semua Tools"
     TOOLS = all_tools
 
     def show_info(self):
@@ -79,14 +79,14 @@ if __name__ == "__main__":
                 os.system('clear')
                 # run.menu()
                 print("""
-                        [@] Set Path (All your tools will be install in that directory)
+                        [@] Set Path (directory)
                         [1] Manual 
                         [2] Default
                 """)
-                choice = input("Z4nzu =>> ")
+                choice = input("Pak =>> ")
 
                 if choice == "1":
-                    inpath = input("Enter Path (with Directory Name) >> ")
+                    inpath = input("Masukan Path (Dengan Nama Directory) >> ")
                     with open(fpath, "w") as f:
                         f.write(inpath)
                     print("Successfully Path Set...!!")
@@ -94,10 +94,10 @@ if __name__ == "__main__":
                     autopath = "/home/hackingtool/"
                     with open(fpath, "w") as f:
                         f.write(autopath)
-                    print(f"Your Default Path Is:- {autopath}")
+                    print(f"Default Path Mu:- {autopath}")
                     sleep(3)
                 else:
-                    print("Try Again..!!")
+                    print("Coba Lagi..!!")
                     exit(0)
 
             with open(fpath) as f:
@@ -108,15 +108,15 @@ if __name__ == "__main__":
                 all_tools = AllTools()
                 all_tools.show_options()
 
-        # If not Linux and probably Windows
+        # Jika Bukan Linux
         elif system() == "Windows":
             print(
-                "\033[91m Please Run This Tool In Debian System For Best Result " "\e[00m")
+                "\033[91m Tool ini hanya berfungsi pada Linux/Debian " "\e[00m")
             sleep(2)
             webbrowser.open_new_tab("https://tinyurl.com/y522modc")
 
         else:
-            print("Please Check Your Sytem or Open new issue ...")
+            print("Silahkan Cek kesalahan pada system anda ...")
 
     except KeyboardInterrupt:
         print("\nExiting ..!!!")
