@@ -14,20 +14,20 @@ NC='\e[0m'
 purpal='\033[35m'
 
 
-echo -e "${BLUE}                                    CREATE BY PAK STEVEN ${NC}"
-
-echo -e "${RED}                                   [!] GUNAKAN DENGAN BIJAK [!]${NC}"
+echo -e "${BLUE}              CREATE BY PAK STEVEN ${NC}"
+echo -e '${BLUE}.             -------------------- ${NC}"
+echo -e "${BLUE}              TELEGRAM: @TermuxUserHack ${NC}"
 echo ""
 echo -e ${CYAN}              "Pilih Angka 1 : "
 echo ""
-echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
-echo -e "${WHITE}              [0] Exit "
-echo -n -e "Z4nzu >> "
+echo -e "${YELLOW}            [1] Kali Linux / Parrot-Os "
+echo -e "${YELLOW}            atau [0] Keluar "
+echo -n -e "Pak >> "
 read choice
 INSTALL_DIR="/usr/share/doc/hackingtool"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then 
-	echo "[*] Checking Internet Connection .."
+	echo "[*] Mulai penginstallan..."
 	wget -q --tries=10 --timeout=20 --spider https://google.com
 	if [[ $? -eq 0 ]]; then
 	    echo -e ${BLUE}"[✔] Loading ... "
@@ -52,7 +52,7 @@ if [ $choice == 1 ]; then
 		sudo cp hackingtool /usr/bin/;
 		rm hackingtool;
 		echo ""; 
-		echo "[✔] Trying to installing Requirements ..."
+		echo "[✔] Mencoba Ulang Pengistallan Requirements ..."
 		sudo pip3 install lolcat
 		sudo apt-get install -y figlet
 		sudo pip3 install boxes
@@ -60,7 +60,7 @@ if [ $choice == 1 ]; then
 		sudo pip3 install flask
 		sudo pip3 install requests
 	else 
-		echo -e $RED "Please Check Your Internet Connection ..!!"
+		echo -e $RED "Silahkan cek koneksi internet mu..!!"
 	fi
 
     if [ -d "$INSTALL_DIR" ]; then
