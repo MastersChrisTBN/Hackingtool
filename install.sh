@@ -15,7 +15,7 @@ purpal='\033[35m'
 
 
 echo -e "${BLUE}              CREATE BY PAK STEVEN ${NC}"
-echo -e '${BLUE}.             -------------------- ${NC}"
+
 echo -e "${BLUE}              TELEGRAM: @TermuxUserHack ${NC}"
 echo ""
 echo -e ${CYAN}              "Pilih Angka 1 : "
